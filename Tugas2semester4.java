@@ -1,20 +1,20 @@
 
 
 package com.mycompany.tugas2semester4;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Arrays;
 public class Tugas2semester4 {
-//Penggunaan Add pada Linked List di ArrayList
+//Penggunaan Add pada Linked List
        public static void main(String[] args) {
-        ArrayList<String> Hewan = new ArrayList<>(Arrays.asList("Sapi","Kelinci","Kambing","Unta","Domba"));
+        LinkedList<String> Hewan = new LinkedList<>(Arrays.asList("Sapi","Kelinci","Kambing","Unta","Domba"));
         System.out.print("Hewan : "+Hewan);
-//Penggunaan Delete pada Linked List di ArrayList
-        ArrayList<String> deleteHewan = new ArrayList<>();
+//Penggunaan Delete pada Linked List 
+        LinkedList<String> deleteHewan = new LinkedList<>();
         deleteHewan.add("Kelinci");
         deleteHewan.add("Kambing");
         deleteHewan.add("Unta");
 //Penggunaan variable warna untuk pengganti variable deleteHewan 
-        ArrayList<String> hapusData = new ArrayList<>();
+        LinkedList<String> hapusData = new LinkedList<>();
         for (String warna : deleteHewan){
           Hewan.removeIf(h -> h.equals(warna));
           hapusData.add(warna);
